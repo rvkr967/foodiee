@@ -1,0 +1,56 @@
+
+
+<div style="background-image: url('https://content3.jdmagicbox.com/comp/kalimpong/j6/9999p3552.3552.191120042919.m6j6/catalogue/doorstep-food-delivery-service-kalimpong-home-delivery-restaurants-frmedg63c8.jpg');background-attachment: fixed;
+  background-size: cover;">
+  
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h1 class="active"> Sign In </h1>
+
+
+      <!-- Icon -->
+      <!--<div class="fadeIn first">
+        <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+      </div>-->
+      <!-- Login Form -->
+      <!--<input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">-->
+      <form [formGroup]="loginForm" (ngSubmit)="SubmitForm(loginForm)">
+        <div class="form-group">
+
+          <input type="text" class="fadeIn second" formControlName="emailId" placeholder="login" />
+          <p *ngIf="loginForm.controls.emailId.errors?.required && loginForm.controls.emailId.touched" class="alert">This field is required!</p>
+          <p *ngIf="loginForm.controls.emailId.errors?.minlength && loginForm.controls.emailId.touched" class="alert alert-danger">The EmailId is not proper!</p>
+        </div>
+        <div class="form-group">
+
+          <input type="password" class="fadeIn third" formControlName="password" placeholder="password" />
+          <p *ngIf="loginForm.controls.password.errors?.required && loginForm.controls.password.touched" class="alert">This field is required!</p>
+
+        </div>
+        <!--<button type="submit" class="fadeIn fourth">Submit</button>-->
+        <input type="submit" class="fadeIn fourth" value="Log In">
+      </form>
+      <!--<input type="submit" class="fadeIn fourth" value="Log In">-->
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+      </div>
+
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  
+</div>

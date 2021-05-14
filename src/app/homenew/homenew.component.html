@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><h2>Foodie</h2></a>
+  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="/viewProducts" class="nav-link" href="#">MyOrders</a>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <ul class="navbar-nav ml-auto">
+      <a class="navbar-brand" href="#">UserName</a>
+      <li class="nav-item">
+        <a routerLink="/viewCart" class="nav-link" href="#">MyCart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/SDCVDFV">Logout</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+<!--<div>
+  <ul>
+    <li><a href="#"> Home </a></li>
+    <li><a href="#"> Gallery </a></li>
+    <li><a href="#"> Contact </a></li>
+    <li><a href="#"> About </a></li>
+    <div class="slider"></div>
+  </ul>
+
+</div>-->
+<br />
+<div class="container">
+  <div class="row">
+    <div *ngFor="let rest of restaurants">
+      <div class="col-sm-3">
+        <img src="{{'../../assets/'+rest.restId+'.jpeg'}}" class="rounded" style="height:225px;width:325px;" />
+        <h4 style="color:darkorange">{{rest.restName+' '}}</h4>
+        <h5>{{rest.restAddress}}</h5>
+        
+      </div>
+      <div class="col-sm-2">&nbsp;</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

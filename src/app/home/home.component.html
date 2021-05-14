@@ -1,0 +1,16 @@
+<p>home works!</p>
+<div class="table-responsive">
+  <table class="table" style="border:2px solid rgba(220,230,242,1);" >
+    <tr style="background-color:rgba(220,230,242,1); font-size:12pt">
+      <th>Item Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Amount tobe paid</th>
+    </tr>
+    <tr *ngFor="let cart of Carts" style="background-color:white">
+      <td>{{cart.itemName}}</td>
+      <td>{{cart.price}}</td>
+      <td><input type="number" id="quan" name="quan" /></td>
+      <!--<td>{{quan.value}}</td>-->
+  </table>
+</div>
